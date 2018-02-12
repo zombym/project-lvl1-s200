@@ -7,11 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
     "eslint": "eslint",
-    "start": "npm run babel-node src/bin/brain-games.js",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build"
   },
-      "bin": {
+    "bin": {
       "brain-games": "dist/bin/brain-games.js"
     },
   "repository": {
