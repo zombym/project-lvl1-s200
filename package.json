@@ -1,6 +1,6 @@
 {
   "name": "zombymaster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -10,9 +10,10 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-    "bin": {
-      "brain-games": "dist/bin/brain-games.js"
-    },
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js",
+    "index": "dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zombym/project-lvl1-s200.git"
