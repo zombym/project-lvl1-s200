@@ -33,9 +33,13 @@
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
     "eslint": "^4.10.0",
+    "readline-sync": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-flowtype": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-jest": "*"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.8"
   }
 }
