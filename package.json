@@ -1,6 +1,6 @@
 {
   "name": "mybrain-games",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "index": "dist/index.js"
+    "index": "dist/index.js",
+    "brain-even": "dist/bin/brain-games.js"
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,6 @@
     "babel-eslint": "*"
   },
   "dependencies": {
-    "mybrain-games": "0.0.6",
     "readline-sync": "^1.4.8"
   }
 }
