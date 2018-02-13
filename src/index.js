@@ -8,10 +8,9 @@ const evengame = () => {
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     const a = Math.floor(Math.random() * 100);
-    let b = '';
     console.log(`Question: ${a}!`);
     const answer = readlineSync.question('Your answer: ');
-    (a % 2 === 0) ? b = 'yes' : b = 'no';
+    const b = (a % 2 === 0) ? 'yes' : 'no';
     if (answer === b) {
       console.log('Correct!');
       count += 1;
