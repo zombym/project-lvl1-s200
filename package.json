@@ -1,6 +1,6 @@
 {
-  "name": "zombymaster",
-  "version": "1.0.5",
+  "name": "mybrain-games",
+  "version": "0.0.7",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -40,6 +40,7 @@
     "babel-eslint": "*"
   },
   "dependencies": {
+    "mybrain-games": "0.0.6",
     "readline-sync": "^1.4.8"
   }
 }
