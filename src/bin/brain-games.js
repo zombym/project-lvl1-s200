@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-import evengame from '../index';
 
-evengame();
+console.log('Welcome to the brain Games!');

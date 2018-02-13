@@ -1,6 +1,6 @@
 {
   "name": "mybrain-games",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-games.js"
+    "brain-even": "dist/bin/even-games.js"
   },
   "repository": {
     "type": "git",
