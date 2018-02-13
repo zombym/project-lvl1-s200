@@ -4,7 +4,7 @@ install-deps:
 	npm install
 
 run:
-	npm run babel-node src/bin/brain-games.js
+	npm run babel-node src/bin/even-games.js
 
 lint:
 	npm run eslint .
