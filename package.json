@@ -1,6 +1,6 @@
 {
   "name": "mybrain-games",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -11,9 +11,8 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "brain-games": "src/bin/brain-games.js",
-    "index": "src/index.js",
-    "brain-even": "src/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-games.js"
   },
   "repository": {
     "type": "git",
@@ -31,14 +30,14 @@
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
+    "babel-eslint": "*",
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
     "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "*",
-    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-flowtype": "^2.44.0",
     "eslint-plugin-import": "*",
-    "eslint-plugin-jest": "*",
-    "babel-eslint": "*"
+    "eslint-plugin-jest": "^21.12.1"
   },
   "dependencies": {
     "readline-sync": "^1.4.8"
