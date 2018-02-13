@@ -1,6 +1,6 @@
 {
   "name": "zombymaster",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
-    "index": "dist/index.js"
+    "brain-games": "src/bin/brain-games.js",
+    "index": "src/index.js"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,6 @@
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
     "eslint": "^4.10.0",
-    "readline-sync": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-flowtype": "*",
     "eslint-plugin-import": "*",
