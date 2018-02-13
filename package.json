@@ -1,6 +1,6 @@
 {
   "name": "zombymaster",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "hexlet.io courses-lvl1",
   "main": "brain-games.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
-    "brain-games": "src/bin/brain-games.js",
-    "index": "src/index.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "index": "dist/index.js"
   },
   "repository": {
     "type": "git",
