@@ -17,4 +17,12 @@ export const check = (answer, rez, name, cnt) => {
 
 export const random = (min, max) => Math.floor((Math.random() * (max - min)) + min);
 
+export const nod = (n, m) => {
+  if (m > 0) {
+    const k = n % m;
+    return nod(m, k);
+  } else return Math.abs(n);
+};
+
+
 export default welcomScreen;
