@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import evengame from '../index';
+import calc from '../games/calc';
 
-evengame();
+console.log('Welcome to the brain Games! \nAWhat is the result of the expression?\n');
+
+calc();

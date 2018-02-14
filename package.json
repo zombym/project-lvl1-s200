@@ -1,6 +1,6 @@
 {
   "name": "mybrain-games",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "hexlet.io courses-lvl1",
   "main": "index.js",
   "scripts": {
