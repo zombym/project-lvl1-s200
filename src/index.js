@@ -21,7 +21,7 @@ export const nod = (n, m) => {
   if (m > 0) {
     const k = n % m;
     return nod(m, k);
-  } else return Math.abs(n);
+  } return Math.abs(n);
 };
 
 

@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import welcomScreen, { random, check, nod } from '../index';
 
 const gcd = () => {
+  console.log('Welcome to the brain Games! \nFind the greatest common divisor of given numbers.\n');
   const name = welcomScreen();
   let count = 0;
   for (let i = 0; i < 3; i += 1) {

@@ -2,8 +2,8 @@
 import readlineSync from 'readline-sync';
 import welcomScreen, { random, check } from '../index';
 
-
 const calc = () => {
+  console.log('Welcome to the brain Games! \nAWhat is the result of the expression?\n');
   const name = welcomScreen();
   let count = 0;
   let rez = 0;

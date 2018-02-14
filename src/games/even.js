@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import welcomScreen, { random, check } from '../index';
 
 const evengame = () => {
+  console.log('Welcome to the brain Games! \nAnswer "yes" if number even otherwise answer "no".\n');
   const name = welcomScreen();
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
