@@ -18,3 +18,7 @@ build:
 
 publish:
 	npm publish
+
+git:
+	git c -a
+	git push
