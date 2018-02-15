@@ -8,19 +8,27 @@ const balance = () => {
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     let summ = 0;
-    const a = random(100, 999);
+    let a = random(100, 999);
+    a = String(a);
     console.log(`Question: ${a}!`);
-    const answer = readlineSync.question('Your answer: ');
-    for (let s = 0; s < answer.length; s += 1) {
-      summ += Number(answer[s]);
+
+    for (let s = 0; s < a.length; s += 1) {
+      summ += Number(String(a[s]));
     }
-    const sr = summ / answer.length;
-    const izl = Math.round((sr - Math.floor(sr)) * answer.length);
+    const sr = Math.floor(summ / a.length);
+    const izl = summ - (a.length * sr);
     let rez = '';
-    console.log(` sr = ${Math.floor(sr)} izl = ${izl}`);
-    for (let s = answer.length; s > 0; s -= 1) {
-      rez += String(Math.floor(sr) + Math.ceil(izl / 0.9));
+    switch (izl) {
+      case 1:
+        rez = String(sr) + String(sr) + String(sr + 1);
+        break;
+      case 2:
+        rez = String(sr) + String(sr + 1) + String(sr + 1);
+        break;
+      default:
+        rez = String(sr) + sr + sr;
     }
+    const answer = readlineSync.question('Your answer: ');
 
     count = check(answer, rez, name, count);
   }
