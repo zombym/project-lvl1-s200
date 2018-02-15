@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-const welcomScreen = (task) => {
+const welcomeScreen = (task) => {
   console.log(`Welcome to the brain Games! \n${task}\n`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello ${name}!`);
@@ -10,11 +10,12 @@ const welcomScreen = (task) => {
 
 
 export const check = (answer, rez, name, cnt) => {
+  let ct = cnt;
   if (answer === String(rez)) {
     console.log('Correct!');
-    cnt += 1;
+    ct += 1;
   } else console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rez}'\nLet's try again, ${name}`);
-  return cnt;
+  return ct;
 };
 
 export const random = (min, max) => Math.floor((Math.random() * (max - min)) + min);
@@ -26,8 +27,8 @@ export const nod = (n, m) => {
   } return Math.abs(n);
 };
 
-export const checkCount = (count, name) => {
-  if (count === 3) console.log(`Congratulations, ${name}`);
+export const checkCount = (count, name, iter) => {
+  if (count === iter) console.log(`Congratulations, ${name}`);
 };
 
 export const question = (qst) => {
@@ -82,4 +83,4 @@ export const rezBalance = () => {
   return rez;
 };
 
-export default welcomScreen;
+export default welcomeScreen;

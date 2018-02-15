@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-import welcomScreen, { check, getAnswer, checkCount, rezEven } from '../index';
+import welcomeScreen, { check, getAnswer, checkCount, rezEven } from '../index';
 
-const evengame = () => {
-  const name = welcomScreen('Answer "yes" if number even otherwise answer "no".');
+const evengame = (iter) => {
+  const name = welcomeScreen('Answer "yes" if number even otherwise answer "no".');
   let count = 0;
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < iter; i += 1) {
     const rez = rezEven();
     count = check(getAnswer(), rez, name, count);
   }
-  checkCount(count, name);
+  checkCount(count, name, iter);
 };
 
 export default evengame;

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import welcomScreen from '../index';
+import welcomeScreen from '../index';
 
 const games = () => {
-  welcomScreen('');
+  welcomeScreen('');
 };
 
 export default games;

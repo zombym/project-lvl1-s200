@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 import evengame from '../games/even';
 
-evengame();
+evengame(3);
