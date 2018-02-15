@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+import welcomScreen from '../index';
+
 const games = () => {
-  console.log('Welcome to the brain Games!');
+  welcomScreen('');
 };
 
 export default games;

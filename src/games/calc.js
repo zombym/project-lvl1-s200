@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import welcomScreen, { random, check } from '../index';
+import welcomScreen, { random, check, getAnswer, checkCount, question } from '../index';
 
 const calc = () => {
-  console.log('Welcome to the brain Games! \nAWhat is the result of the expression?\n');
-  const name = welcomScreen();
+  const name = welcomScreen('What is the result of the expression?');
   let count = 0;
   let rez = 0;
   for (let i = 0; i < 3; i += 1) {
@@ -13,24 +11,23 @@ const calc = () => {
     const mv = random(1, 4);
     switch (mv) {
       case 1:
-        console.log(`Question: ${a} + ${b}!`);
+        question(`Question: ${a} + ${b}!`);
         rez = a + b;
         break;
       case 2:
         rez = a - b;
-        console.log(`Question: ${a} - ${b}!`);
+        question(`Question: ${a} - ${b}!`);
         break;
       case 3:
         rez = a * b;
-        console.log(`Question: ${a} * ${b}!`);
+        question(`Question: ${a} * ${b}!`);
         break;
       default:
     }
-    const answer = readlineSync.question('Your answer: ');
-
+    const answer = getAnswer();
     count = check(answer, rez, name, count);
   }
-  if (count === 3) console.log(`Congratulations, ${name}`);
+  checkCount(count, name);
 };
 
 export default calc;

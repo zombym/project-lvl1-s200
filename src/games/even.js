@@ -1,19 +1,17 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import welcomScreen, { random, check } from '../index';
+import welcomScreen, { random, check, getAnswer, checkCount, question } from '../index';
 
 const evengame = () => {
-  console.log('Welcome to the brain Games! \nAnswer "yes" if number even otherwise answer "no".\n');
-  const name = welcomScreen();
+  const name = welcomScreen('Answer "yes" if number even otherwise answer "no".');
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     const a = random(0, 100);
-    console.log(`Question: ${a}!`);
-    const answer = readlineSync.question('Your answer: ');
+    question(`Question: ${a}!`);
+    const answer = getAnswer();
     const rez = (a % 2 === 0) ? 'yes' : 'no';
     count = check(answer, rez, name, count);
   }
-  if (count === 3) console.log(`Congratulations, ${name}`);
+  checkCount(count, name);
 };
 
 export default evengame;

@@ -1,20 +1,18 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import welcomScreen, { random, check, nod } from '../index';
+import welcomScreen, { random, check, nod, getAnswer, checkCount, question } from '../index';
 
 const gcd = () => {
-  console.log('Welcome to the brain Games! \nFind the greatest common divisor of given numbers.\n');
-  const name = welcomScreen();
+  const name = welcomScreen('Find the greatest common divisor of given numbers.');
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     const a = random(0, 100);
     const b = random(0, 100);
-    console.log(`Question: ${a} ${b}!`);
-    const answer = readlineSync.question('Your answer: ');
+    question(`Question: ${a}!`);
+    const answer = getAnswer();
     const rez = nod(a, b);
     count = check(answer, rez, name, count);
   }
-  if (count === 3) console.log(`Congratulations, ${name}`);
+  checkCount(count, name);
 };
 
 export default gcd;

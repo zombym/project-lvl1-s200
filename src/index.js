@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-const welcomScreen = () => {
+const welcomScreen = (task) => {
+  console.log(`Welcome to the brain Games! \n${task}\n`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello ${name}!`);
   return name;
@@ -24,5 +25,14 @@ export const nod = (n, m) => {
   } return Math.abs(n);
 };
 
+export const checkCount = (count, name) => {
+  if (count === 3) console.log(`Congratulations, ${name}`);
+};
+
+export const question = (qst) => {
+  console.log(qst);
+};
+
+export const getAnswer = () => readlineSync.question('Your answer: ');
 
 export default welcomScreen;
