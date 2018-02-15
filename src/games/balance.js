@@ -9,24 +9,13 @@ const balance = () => {
     let a = random(100, 999);
     a = String(a);
     question(`Question: ${a}!`);
-    for (let s = 0; s < a.length; s += 1) {
-      summ += Number(String(a[s]));
-    }
+    for (let s = 0; s < a.length; s += 1) summ += Number(String(a[s]));
     const sr = Math.floor(summ / a.length);
     const izl = summ - (a.length * sr);
     let rez = '';
-    switch (izl) {
-      case 1:
-        rez = String(sr) + String(sr) + String(sr + 1);
-        break;
-      case 2:
-        rez = String(sr) + String(sr + 1) + String(sr + 1);
-        break;
-      default:
-        rez = String(sr) + sr + sr;
-    }
+    for (let s = izl; s < a.length; s += 1) rez += String(sr);
+    for (let s = a.length - izl; s < a.length; s += 1) rez += String(sr + 1);
     const answer = getAnswer();
-
     count = check(answer, rez, name, count);
   }
   checkCount(count, name);
