@@ -30,9 +30,9 @@ export const checkCount = (count, name, iter) => {
   if (count === iter) console.log(`Congratulations, ${name}`);
 };
 
-export const question = (qst) => {
+/* export const question = (qst) => {
   console.log(qst);
-};
+}; */
 
 export const getAnswer = () => readlineSync.question('Your answer: ');
 
