@@ -1,9 +1,14 @@
-import { engine, rezEven } from '../index';
+import { engine, random } from '../index';
 
 const task = 'Answer "yes" if number even otherwise answer "no".';
 
-const iter = 3;
+const rezEven = () => {
+  const a = random(0, 100);
+  const rez = (a % 2 === 0) ? 'yes' : 'no';
+  const txt = `Question: ${a}!`;
+  return { txt, rez };
+};
 
-const evengame = () => engine(iter, task, rezEven);
+const evengame = () => engine(task, rezEven);
 
 export default evengame;
