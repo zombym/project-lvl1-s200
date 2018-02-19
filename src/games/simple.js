@@ -1,6 +1,6 @@
 import { engine, random } from '../index';
 
-const task = '';
+const task = 'Is this number prime?';
 
 const rezSimple = () => {
   const a = random(0, 100);
@@ -13,7 +13,7 @@ const rezSimple = () => {
     return false;
   };
   const rez = (simpleCheck(a)) ? 'yes' : 'no';
-  const txt = `Is this number prime?: ${a}!`;
+  const txt = a;
   return { txt, rez };
 };
 

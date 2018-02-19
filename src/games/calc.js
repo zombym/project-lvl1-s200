@@ -10,15 +10,15 @@ const rezCalc = () => {
   let txt = '';
   switch (mv) {
     case 1:
-      txt = `Question: ${a} + ${b}!`;
+      txt = `${a} + ${b}`;
       rez = a + b;
       break;
     case 2:
-      txt = `Question: ${a} - ${b}!`;
+      txt = `${a} - ${b}`;
       rez = a - b;
       break;
     case 3:
-      txt = `Question: ${a} * ${b}!`;
+      txt = `${a} * ${b}`;
       rez = a * b;
       break;
     default:

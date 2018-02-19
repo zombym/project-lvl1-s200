@@ -5,7 +5,7 @@ const task = 'Answer "yes" if number even otherwise answer "no".';
 const rezEven = () => {
   const a = random(0, 100);
   const rez = (a % 2 === 0) ? 'yes' : 'no';
-  const txt = `Question: ${a}!`;
+  const txt = a;
   return { txt, rez };
 };
 

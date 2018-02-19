@@ -38,7 +38,7 @@ export const engine = (task, rule) => {
   let count = 0;
   for (let i = 0; i < iter; i += 1) {
     const { txt, rez } = rule();
-    console.log(txt);
+    console.log(`Question: ${txt}!`);
     const answer = getAnswer();
     count = check(answer, rez, name, count);
   }

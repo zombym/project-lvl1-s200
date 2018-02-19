@@ -13,7 +13,7 @@ const rezProgress = () => {
     a += `${startNubmer + (i * diff)} `;
   }
   const rez = startNubmer + (secretNumber * diff);
-  const txt = `Question: ${a}!`;
+  const txt = a;
   return { txt, rez };
 };
 

@@ -6,7 +6,7 @@ const rezBalance = () => {
   let summ = 0;
   let a = random(100, 999);
   a = String(a);
-  const txt = `Question: ${a}!`;
+  const txt = a;
   for (let s = 0; s < a.length; s += 1) summ += Number(String(a[s]));
   const sr = Math.floor(summ / a.length);
   const izl = summ - (a.length * sr);

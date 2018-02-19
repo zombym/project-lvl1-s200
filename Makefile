@@ -9,9 +9,6 @@ run:
 lint:
 	npm run eslint .
 
-test:
-	npm test
-
 build:
 	rm -rf dist
 	npm run build

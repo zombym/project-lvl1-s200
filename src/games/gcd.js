@@ -5,7 +5,7 @@ const task = 'Find the greatest common divisor of given numbers.';
 export const rezGcd = () => {
   const a = random(0, 100);
   const b = random(0, 100);
-  const txt = `Question: ${a} ${b}!`;
+  const txt = `${a} ${b}`;
   const rez = nod(a, b);
   return { rez, txt };
 };
